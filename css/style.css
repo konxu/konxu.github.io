@@ -1,0 +1,463 @@
+/*!
+ * Hello I am xyxy and this is my test!
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+
+
+ :root {
+  --blue: #00A9D1;
+  --feb: #FFEECE;
+  --mar: #FFE380;
+  --april: #FFD95E;
+  --may: #FF9F66;
+  --june: #F28584;
+  --more: #F8735F;
+  --febz: #617D90;
+  --marz: #679866;
+  --aprz: #FFEFCD;
+  --mayz: #FFD95C;
+  --junez: #51B1B5;
+ */
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
+}
+
+body {
+  background: #FFFFFF;
+  font-family: 'Open Sans', sans-serif,'Muli', sans-serif;
+}
+
+  a {
+    text-decoration: none; }
+    a:hover {
+    font-color: black
+    text-decoration: none; }
+    a:after {
+    font-color: black
+    text-decoration: none; }
+  }
+
+  h1 {
+    font-family: 'Open Sans';
+    font-weight:900;
+    font-size: 1em;
+    letter-spacing: 0;
+  }
+
+
+  h2 {
+    font-family: 'Open Sans';
+    font-weight: 900;
+    font-size: 2.5em;
+
+    letter-spacing: 0;
+  }
+
+  p{
+    font-family: 'Muli';
+    font-weight:200;
+    font-size: 1em;
+    color: #00A9D1;
+  }
+
+  p1{
+    font-family: 'Muli';
+    font-weight:200;
+    font-size: .7em;
+    color: #00A9D1;
+  }
+
+.logo{
+  position: fixed;
+  z-index: 5
+}
+
+.logo:before,
+.logo:after {
+    content: '';
+    position: absolute;
+    top: .85em;
+    display:none;
+    font-family: 'Open Sans';
+    font-weight: 900;
+    font-size: 1.5em;
+    letter-spacing: 0;
+    color: black;
+}
+
+.logo:before {
+    content: attr(data-hover);
+}
+
+.logo:hover span,
+.logo:active span {
+    display: none;
+}
+
+.logo:hover:before,
+.logo:active:after {
+    display: inline;
+}
+
+#left
+  {
+    width: 60%;
+    height: 100%;
+    padding-bottom: 180px;
+  }
+  @media (max-width: 700px) {
+    #left{
+      width: 100%;
+    }
+  }
+
+#right
+  {
+      position: fixed;
+      float:right;
+      top: 0;
+      height: 100%;
+  }
+  @media (max-width: 700px) {
+    #left{
+      position: relative;
+      float:none;
+    }
+  }
+
+
+.site-section-mar {
+  position: fixed;
+  left: 7.5%;
+  top: 0;
+  width: 60%;
+  height: 80%;
+}
+@media (max-width: 700px) {
+  .site-section-mar{
+    width: 100%;
+    height: 60%;
+  }
+}
+
+.container {
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 80%;
+}
+@media (max-width: 700px) {
+  .container{
+    width: 100%;
+    height: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+.container-feb {
+  padding-right: 45px;
+  padding-left: 45px;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+  background-color: #FFEECE;
+}
+.container-mar {
+  padding-right: 45px;
+  padding-left: 45px;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+  background-color: #FFE380;
+}
+@media (max-width: 700px) {
+  .container-mar{
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+.site-text {
+  transform: rotate(-270deg);
+  padding-left: 60%;
+}
+@media (max-width: 700px) {
+   .site-text{
+    transform: rotate(0deg);
+    padding-left: 0;
+    float:right;
+    font-size: .6em;
+  }
+}
+
+.site-feb {
+  background-color: #FFEECE;
+  position: fixed;
+  left: 60%;
+  width: 7.5%;
+  height: 100%;
+}
+@media (max-width: 700px) {
+   .site-feb{
+     left:70%;
+     right:0;
+    width: 30%;
+    height: 10%;
+  }
+}
+
+.site-apr {
+  background-color: #FFD95E;
+  position: fixed;
+  left: 75%;
+  width: 7.5%;
+  height: 100%;
+}
+@media (max-width: 700px) {
+  .site-apr{
+    left:80%;
+    right:0;
+    top: 20%;
+    width: 20%;
+    height: 10%;
+  }
+}
+
+.site-may {
+  background-color: #FF9F66;
+  position: fixed;
+  left: 82.5%;
+  width: 7.5%;
+  height: 100%;
+}
+@media (max-width: 700px) {
+  .site-may{
+    left:80%;
+    right:0;
+    top: 30%;
+    width: 20%;
+    height: 10%;
+  }
+}
+
+.site-june {
+  background-color: #F28584;
+  position: fixed;
+  left: 90%;
+  width: 7.5%;
+  height: 100%;
+}
+@media (max-width: 700px) {
+  .site-june{
+    left:80%;
+    right:0;
+    top: 40%;
+    width: 20%;
+    height: 11%;
+  }
+}
+
+.site-more {
+  background-color: #F8735F;
+  position: fixed;
+  left: 97.5%;
+  width: 2.5%;
+  height: 100%;
+}
+@media (max-width: 700px) {
+  .site-more{
+    left:80%;
+    right:0;
+    top: 50%;
+    width: 20%;
+    height: 3%;
+  }
+}
+/*!
+This is for the March part
+*/
+
+.site-feb-mar {
+  background-color: #FFEECE;
+  position: fixed;
+  left: 0;
+  width: 7.5%;
+  height: 100%;
+}
+
+
+.site-mar {
+  background-color: #FFE380;
+  position: fixed;
+  left: 67.5%;
+  width: 7.6%;
+  height: 100%;
+}
+@media (max-width: 700px) {
+  .site-mar{
+    left:70%;
+    right:0;
+    top: 10%;
+    width: 30%;
+    height: 10%;
+  }
+}
+
+
+h5 {
+font-family: 'Open Sans';
+font-weight: 900;
+font-size: 2.5rem;
+color: #FFFFFF;
+letter-spacing: 0;
+position: relative;
+text-align: center;
+vertical-align: middle;
+}
+
+#circle {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      background: #679866;
+    }
+
+.col-mar{
+      display:run-in;
+      -webkit-columns: 2 300px;
+      -moz-columns: 2 300px;
+      columns: 2 300px;
+      -webkit-column-gap: 0em;
+      -moz-column-gap: 0em;
+      column-gap: 0em;
+      box-decoration-break: clone;
+}
+
+/*!
+This is the footer part
+*/
+.site-footer{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background: #617D90;
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:28%;
+   width:100%;
+   overflow: hidden;
+   overflow-y: auto;
+   padding-left: 20px;
+   padding-top: -10px;
+   padding-bottom: 10px;
+}
+@media (max-width: 700px) {
+  .site-footer{
+    position:relative;
+    width:100%;
+    left:0px;
+    bottom:0px;
+    height:100%;
+    padding-left: 5px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-top: -250px;
+    margin-left: -22px;
+  }
+}
+
+
+
+
+.col-1 {
+  position: relative;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  float: left;
+  max-width: 30%;
+}
+@media (max-width: 700px) {
+  .col-1{
+    max-width: 100%;
+  }
+}
+.col-2 {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 25px;
+  margin-top: 15px;
+  float: left;
+  max-width: 20%;
+}
+@media (max-width: 700px) {
+  .col-2{
+    max-width: 100%;
+  }
+}
+.col-3 {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 25px;
+  margin-top: 15px;
+  float: left;
+  max-width: 60%;
+}
+.col-4{
+  -webkit-columns: 4 200px;
+  -moz-columns: 4 200px;
+  columns: 4 200px;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 2em;
+}
+
+.site-footer h1 {
+  font-family: 'Open Sans';
+  font-weight: 900;
+  font-size: 18px;
+  color: #FFEECE;
+}
+.site-footer h3 {
+  font-family: 'Muli';
+  font-weight: 200;
+  font-size: 14px;
+  color: #FFEECE;
+  letter-spacing: 0;
+}
+
+
+.site-footer h4 {
+  font-family: 'Muli';
+  font-weight: 200;
+  font-size: 14px;
+  color: #FFE380;
+  letter-spacing: 0;
+}
+
+.site-footer h4 a{
+  font-family: 'Muli';
+  font-weight: 200;
+  font-size: 14px;
+  color: #FFE380;
+  letter-spacing: 0;
+}
+
+.site-footer p {
+  font-family: 'Muli';
+  font-weight: 200;
+  font-size: 14px;
+  color: #FFD95E;
+  letter-spacing: 0;
+}
