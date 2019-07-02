@@ -26,15 +26,17 @@
 body {
   background: #FFFFFF;
   font-family: 'Open Sans', sans-serif,'Muli', sans-serif;
+  padding:0;
+  margin:0;
 }
 
   a {
     text-decoration: none; }
     a:hover {
-    font-color: black
+    font-color: black;
     text-decoration: none; }
     a:after {
-    font-color: black
+    font-color: black;
     text-decoration: none; }
   }
 
@@ -73,6 +75,11 @@ body {
     position: fixed;
     width: 100%;
     z-index: 5;
+  }
+  @media (min-width: 48em) {
+    .header{
+      width:20%;
+    }
   }
 
   .header ul {
@@ -124,6 +131,7 @@ body {
     display: inline-block;
     float: right;
     padding: .85em;
+    margin-right: 1em;
     position: relative;
     user-select: none;
     z-index: 6;
@@ -191,24 +199,13 @@ body {
   @media (min-width: 48em) {
     .header li {
       float: left;
-      width:40%;
-      height:40%;
     }
     .header li a {
       text-align: center;
-      transform: rotate(-90deg);
     }
     .header .menu {
       clear: none;
       float: right;
-      max-height: 0;
-      background: #FFEECE; /* Old browsers */
-      background: -moz-linear-gradient(left,  #FFEECE 0%, #FFEECE 20%, #FFE380 20%, #FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#FFEECE), color-stop(20%,#FFEECE), color-stop(20%,#FFE380), color-stop (40%,#FFE380), color-stop(40%,#FFD95E), color-stop (60%,#FFD95E)), color-stop(60%,#FF9F66), color-stop (80%,#FF9F66), color-stop(80%,#F28584), color-stop (100%,#F28584)); /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(left, #FFEECE 0%,#FFEECE 20%,#FFE380 20%,#FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(left,  #FFEECE 0%,#FFEECE 20%,#FFE380 20%,#FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* Opera 11.10+ */
-      background: -ms-linear-gradient(left,  #FFEECE 0%,#FFEECE 20%,#FFE380 20%,#FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* IE10+ */
-      background: linear-gradient(to right,  #FFEECE 0%,#FFEECE 20%,#FFE380 20%,#FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* W3C */
     }
     .header .menu-icon {
       display: none;
@@ -218,14 +215,15 @@ body {
 
 .logo{
   position: fixed;
-  z-index: 5
+  z-index: 5;
+  top:-.5em;
 }
 
 .logo:before,
 .logo:after {
     content: '';
     position: absolute;
-    top: .85em;
+    top: .82em;
     display:none;
     font-family: 'Open Sans';
     font-weight: 900;
@@ -252,9 +250,9 @@ body {
   {
     width: 60%;
     height: 100%;
-    padding-bottom: 180px;
+    padding-bottom: 13%;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 48em) {
     #left{
       width: 100%;
     }
@@ -266,11 +264,13 @@ body {
       float:right;
       top: 0;
       height: 100%;
+      width:40%;
+
+
+
   }
   @media (max-width: 48em) {
     #right{
-      position: relative;
-      float:none;
       opacity: 0;
     }
   }
@@ -283,7 +283,7 @@ body {
   width: 60%;
   height: 80%;
 }
-@media (max-width: 700px) {
+@media (max-width: 48em) {
   .site-section-mar{
     width: 100%;
     height: 60%;
@@ -295,18 +295,19 @@ body {
   padding-left: 25px;
   margin-right: 10px;
   margin-left: 10px;
+  padding-bottom:6em;
   overflow: hidden;
   overflow-y: auto;
   height: 80%;
 }
-@media (max-width: 700px) {
+@media (max-width: 48em) {
   .container{
     width: 100%;
     height: 100%;
     padding-right: 5px;
     padding-left: 5px;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 10px;
+    margin-left:10px;
   }
 }
 
@@ -326,7 +327,7 @@ body {
   height: 100%;
   background-color: #FFE380;
 }
-@media (max-width: 700px) {
+@media (max-width: 48em) {
   .container-mar{
     padding-right: 0px;
     padding-left: 0px;
@@ -340,7 +341,7 @@ body {
   transform: rotate(-270deg);
   padding-left: 60%;
 }
-@media (max-width: 700px) {
+@media (max-width: 48em) {
    .site-text{
     transform: rotate(0deg);
     padding-left: 0;
@@ -460,22 +461,22 @@ This is the footer part
    width:100%;
    overflow: hidden;
    overflow-y: auto;
-   padding-left: 20px;
-   padding-top: -10px;
+   padding-left: 10px;
+   padding-top: -40px;
    padding-bottom: 10px;
 }
-@media (max-width: 700px) {
+@media (max-width: 48em) {
   .site-footer{
     position:relative;
     width:100%;
-    left:0px;
-    bottom:0px;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
     height:100%;
-    padding-left: 5px;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    margin-top: -250px;
-    margin-left: -22px;
+    padding-left: 0;
+    margin-top: -15em;
+    margin-left: 0;
   }
 }
 
@@ -490,7 +491,7 @@ This is the footer part
   float: left;
   max-width: 30%;
 }
-@media (max-width: 700px) {
+@media (max-width: 48em) {
   .col-1{
     max-width: 100%;
   }
@@ -503,7 +504,7 @@ This is the footer part
   float: left;
   max-width: 20%;
 }
-@media (max-width: 700px) {
+@media (max-width: 48em) {
   .col-2{
     max-width: 100%;
   }
