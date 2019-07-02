@@ -484,6 +484,7 @@ This is the footer part
     padding-left: 0;
     margin-top: -15em;
     margin-left: 0;
+    z-index: 6;
   }
 }
 
