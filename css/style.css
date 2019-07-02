@@ -43,7 +43,7 @@ body {
   h1 {
     font-family: 'Open Sans';
     font-weight:900;
-    font-size: .5em;
+    font-size: 20px;
     letter-spacing: 0;
   }
 
@@ -107,7 +107,7 @@ body {
   .header li a {
     display:inline-block;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     height:100%;
     width:100%;
     text-decoration: none;
@@ -136,7 +136,7 @@ body {
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: .85em;
+    top: .8em;
     padding-right: 2em;
     position: relative;
     user-select: none;
@@ -232,11 +232,11 @@ body {
 .logo:after {
     content: '';
     position: absolute;
-    top: .82em;
+    top: .8em;
     display:none;
     font-family: 'Open Sans';
     font-weight: 900;
-    font-size: 1.5em;
+    font-size: 24px;
     letter-spacing: 0;
     color: black;
 }
