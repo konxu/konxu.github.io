@@ -49,8 +49,7 @@ body {
   h2 {
     font-family: 'Open Sans';
     font-weight: 900;
-    font-size: 2.5em;
-
+    font-size:2em;
     letter-spacing: 0;
   }
 
@@ -68,217 +67,155 @@ body {
     color: #00A9D1;
   }
 
-  /* Screen reader only */
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
-  }
+  /* header */
 
-  /* Button styling */
-  .menu-toggle {
-    display: inline-block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: #333;
-  }
-
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    color: #c00;
-  }
-
-  /*
-   Default styles + Mobile first
-   Offscreen menu style
-  */
-  .main-menu {
-    position: absolute;
-    display: none;
-    left: -200px;
-    top: 0;
-    height: 100%;
-  	overflow-y: scroll;
-  	overflow-x: visible;
-  	transition: left 0.3s ease,
-  				      box-shadow 0.3s ease;
-  	z-index: 999;
-  }
-
-  .main-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 2.5em 0 0;
-    /* Hide shadow w/ -8px while 'closed' */
-    -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-       -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-            box-shadow: -8px 0 8px rgba(0,0,0,.5);
-    min-height: 100%;
-    width: 200px;
-    background: #1a1a1a;
-  }
-
-  .main-menu a {
-    display: block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px solid #383838;
-  }
-
-  .main-menu li:first-child a {
-    border-top: 1px solid #383838;
-  }
-
-  .main-menu a:hover,
-  .main-menu a:focus {
-    background: #333;
-    text-decoration: underline;
-  }
-
-  .main-menu .menu-close {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  /*
-   On small devices, allow it to toggle...
-  */
-  /*
-   :target for non-JavaScript
-   [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
-  */
-  .main-menu:target,
-  .main-menu[aria-expanded="true"] {
-    display: block;
-    left: 0;
-    outline: none;
-    -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-    -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-    box-shadow: 3px 0 12px rgba(0,0,0,.25);
-  }
-
-  .main-menu:target .menu-close,
-  .main-menu[aria-expanded="true"] .menu-close {
-    z-index: 1001;
-  }
-
-  .main-menu:target ul,
-  .main-menu[aria-expanded="true"] ul {
-    position: relative;
-    z-index: 1000;
-  }
-
-  /*
-   We could us `.main-menu:target:after`, but
-   it wouldn't be clickable.
-  */
-  .main-menu:target + .backdrop,
-  .main-menu[aria-expanded="true"] + .backdrop{
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 0;
+  .header {
+    position: fixed;
     width: 100%;
+    z-index: 5;
+  }
+
+  .header ul {
+    height:100%;
+    width:100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background: #FFEECE; /* Old browsers */
+    background: -moz-linear-gradient(top,  #FFEECE 0%, #FFEECE 20%, #FFE380 20%, #FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, top, bottom, color-stop(0%,#FFEECE), color-stop(20%,#FFEECE), color-stop(20%,#FFE380), color-stop (40%,#FFE380), color-stop(40%,#FFD95E), color-stop (60%,#FFD95E)), color-stop(60%,#FF9F66), color-stop (80%,#FF9F66), color-stop(80%,#F28584), color-stop (100%,#F28584)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #FFEECE 0%,#FFEECE 20%,#FFE380 20%,#FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #FFEECE 0%,#FFEECE 20%,#FFE380 20%,#FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #FFEECE 0%,#FFEECE 20%,#FFE380 20%,#FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #FFEECE 0%,#FFEECE 20%,#FFE380 20%,#FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* W3C */
+  }
+
+  .header li a {
+    display:inline-block;
+    text-align: center;
+    font-size: 2.5em;
+    height:100%;
+    width:100%;
+    text-decoration: none;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: white;
+  }
+
+
+
+  /* menu */
+
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+
+  /* menu icon */
+
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: .85em;
+    position: relative;
+    user-select: none;
+    z-index: 6;
+  }
+
+  .header .menu-icon .navicon {
+    background: #FF9F66;
+    display: block;
+    height: 5px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 30px;
+  }
+
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+
+    content: '';
+    display: block;
     height: 100%;
-    z-index: 998;
-    background: #000;
-    background: rgba(0,0,0,.85);
-    cursor: default;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
   }
 
-  @supports (position: fixed) {
-    .main-menu,
-    .main-menu:target + .backdrop,
-    .main-menu[aria-expanded="true"] + .backdrop{
-      position: fixed;
+  .header .menu-icon .navicon:before {
+    background: #F28584;
+    top: 10px;
+  }
+
+  .header .menu-icon .navicon:after {
+    background: #FFD95E;
+    top: -10px;
+  }
+
+  /* menu btn */
+
+  .header .menu-btn {
+    display: none;
+  }
+
+  .header .menu-btn:checked ~ .menu {
+    max-height: 100%;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+  /* 48em = 768px */
+
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+      width:40%;
+      height:40%;
     }
-  }
-
-  /*
-   Larger screen styling
-   Horizontal menu
-  */
-  @media (min-width: 768px) {
-    .menu-toggle,
-    .main-menu .menu-close {
+    .header li a {
+      text-align: center;
+      transform: rotate(-90deg);
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: 0;
+      background: #FFEECE; /* Old browsers */
+      background: -moz-linear-gradient(left,  #FFEECE 0%, #FFEECE 20%, #FFE380 20%, #FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#FFEECE), color-stop(20%,#FFEECE), color-stop(20%,#FFE380), color-stop (40%,#FFE380), color-stop(40%,#FFD95E), color-stop (60%,#FFD95E)), color-stop(60%,#FF9F66), color-stop (80%,#FF9F66), color-stop(80%,#F28584), color-stop (100%,#F28584)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, #FFEECE 0%,#FFEECE 20%,#FFE380 20%,#FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left,  #FFEECE 0%,#FFEECE 20%,#FFE380 20%,#FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(left,  #FFEECE 0%,#FFEECE 20%,#FFE380 20%,#FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* IE10+ */
+      background: linear-gradient(to right,  #FFEECE 0%,#FFEECE 20%,#FFE380 20%,#FFE380 40%, #FFD95E 40%, #FFD95E 60%, #FF9F66 60%, #FF9F66 80%, #F28584 80%, #F28584 100%); /* W3C */
+    }
+    .header .menu-icon {
       display: none;
     }
-
-    /* Undo positioning of off-canvas menu */
-    .main-menu {
-      position: relative;
-  		left: auto;
-  		top: auto;
-  		height: auto;
-      display: block;
-    }
-
-    .main-menu ul {
-      display: flex;
-
-      /* Undo off-canvas styling */
-      padding: 0;
-      -webkit-box-shadow: none;
-         -moz-box-shadow: none;
-              box-shadow: none;
-      height: auto;
-      width: auto;
-      background: none;
-    }
-
-    .main-menu a {
-      color: #06c;
-      border: 0 !important; /* Remove borders from off-canvas styling */
-    }
-
-    .main-menu a:hover,
-    .main-menu a:focus {
-      background: none; /* Remove background from off-canvas styling */
-      color: #c00;
-    }
   }
-
-  /*
-   Demo purposes only
-  */
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-
-  header {
-    padding: 20px;
-    display: flex;
-    align-items: baseline;
-  }
-
-  article {
-    padding: 30px;
-    width: 55em;
-    font-size: 16px;
-    line-height: 1.5em;
-  }
-
-  article h2 {
-    font-weight: 500;
-    font-size: 28px;
-  }
-
-  .logo {
-    margin: 0 30px 0 10px;
-    font-size: 1.5em;
-  }
+/*sth new*/
 
 .logo{
   position: fixed;
@@ -331,10 +268,11 @@ body {
       top: 0;
       height: 100%;
   }
-  @media (max-width: 700px) {
-    #left{
+  @media (max-width: 48em) {
+    #right{
       position: relative;
       float:none;
+      opacity: 0;
     }
   }
 
@@ -419,14 +357,7 @@ body {
   width: 7.5%;
   height: 100%;
 }
-@media (max-width: 700px) {
-   .site-feb{
-     left:70%;
-     right:0;
-    width: 30%;
-    height: 10%;
-  }
-}
+
 
 .site-apr {
   background-color: #FFD95E;
@@ -435,15 +366,7 @@ body {
   width: 7.5%;
   height: 100%;
 }
-@media (max-width: 700px) {
-  .site-apr{
-    left:80%;
-    right:0;
-    top: 20%;
-    width: 20%;
-    height: 10%;
-  }
-}
+
 
 .site-may {
   background-color: #FF9F66;
@@ -452,15 +375,7 @@ body {
   width: 7.5%;
   height: 100%;
 }
-@media (max-width: 700px) {
-  .site-may{
-    left:80%;
-    right:0;
-    top: 30%;
-    width: 20%;
-    height: 10%;
-  }
-}
+
 
 .site-june {
   background-color: #F28584;
@@ -469,15 +384,7 @@ body {
   width: 7.5%;
   height: 100%;
 }
-@media (max-width: 700px) {
-  .site-june{
-    left:80%;
-    right:0;
-    top: 40%;
-    width: 20%;
-    height: 11%;
-  }
-}
+
 
 .site-more {
   background-color: #F8735F;
@@ -486,15 +393,7 @@ body {
   width: 2.5%;
   height: 100%;
 }
-@media (max-width: 700px) {
-  .site-more{
-    left:80%;
-    right:0;
-    top: 50%;
-    width: 20%;
-    height: 3%;
-  }
-}
+
 /*!
 This is for the March part
 */
@@ -515,15 +414,7 @@ This is for the March part
   width: 7.6%;
   height: 100%;
 }
-@media (max-width: 700px) {
-  .site-mar{
-    left:70%;
-    right:0;
-    top: 10%;
-    width: 30%;
-    height: 10%;
-  }
-}
+
 
 
 h5 {
