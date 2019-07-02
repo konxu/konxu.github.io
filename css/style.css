@@ -103,6 +103,7 @@ body {
     display:inline-block;
     text-align: center;
     font-size: 1.5em;
+    height:100%;
     width:100%;
     text-decoration: none;
     overflow:hidden;
