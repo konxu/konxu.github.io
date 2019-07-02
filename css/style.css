@@ -132,7 +132,7 @@ body {
     display: inline-block;
     float: right;
     padding: .85em;
-    margin-right: 1em;
+    padding-right: 2em;
     position: relative;
     user-select: none;
     z-index: 6;
@@ -258,7 +258,7 @@ body {
   }
   @media (max-width: 48em) {
     #left{
-      width: 100%;
+      width: 90%;
     }
   }
 
@@ -269,13 +269,11 @@ body {
       top: 0;
       height: 100%;
       width:40%;
-
-
-
   }
   @media (max-width: 48em) {
     #right{
       opacity: 0;
+      width:0%;
     }
   }
 
