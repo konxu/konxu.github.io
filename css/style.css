@@ -368,6 +368,17 @@ body {
   }
 }
 
+.site-text-febmar {
+  padding-left: 60%;
+  color:#617D90;
+}
+@media (max-width: 48em) {
+   .site-text-febmar{
+    width:0;
+    height:0;
+  }
+}
+
 .site-feb {
   background-color: #FFEECE;
   position: fixed;
@@ -433,7 +444,6 @@ This is for the March part
   .site-feb-mar{
     opacity: 0;
     width:0%;
-    padding:0;
   }
 }
 
