@@ -297,7 +297,6 @@ body {
 }
 @media (max-width: 48em) {
   .site-section-mar{
-    left: 0;
     width: 100%;
     height: 60%;
   }
@@ -328,7 +327,6 @@ body {
   padding-left: 45px;
   margin-right: 120px;
   margin-left: 120px;
-  padding-bottom: 200px;
   overflow: hidden;
   overflow-y: auto;
   padding-bottom:6em;
@@ -338,10 +336,10 @@ body {
 }
 @media (max-width: 48em) {
   .container-mar{
-    width: 100%;
-    height: 100%;
     margin-right: 10px;
     margin-left: 10px;
+    width: 100%;
+    height: 100%;
     padding-right: 5px;
     padding-left: 5px;
   }
@@ -453,12 +451,13 @@ vertical-align: middle;
 
 .col-mar{
       display:run-in;
+      align: center;
       -webkit-columns: 2 300px;
       -moz-columns: 2 300px;
       columns: 2 300px;
-      -webkit-column-gap: -10px;
-      -moz-column-gap: -10px;
-      column-gap: -10px;
+      -webkit-column-gap: 0;
+      -moz-column-gap: 0;
+      column-gap: 0;
       box-decoration-break: clone;
 }
 
