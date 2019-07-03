@@ -323,12 +323,10 @@ body {
 
 
 .container-mar {
-  padding-right: 145px;
-  padding-left: 45px;
-  margin-right: 120px;
-  margin-left: 120px;
-  overflow: hidden;
-  overflow-y: auto;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: 40%;
+  margin-left: 100px;
   padding-bottom:6em;
   overflow: hidden;
   overflow-y: auto;
@@ -451,14 +449,15 @@ vertical-align: middle;
 
 .col-mar{
       display:run-in;
-      align: center;
-      -webkit-columns: 2 300px;
-      -moz-columns: 2 300px;
-      columns: 2 300px;
-      -webkit-column-gap: 0;
-      -moz-column-gap: 0;
-      column-gap: 0;
+      -webkit-columns: 2 200px;
+      -moz-columns: 2 200px;
+      columns: 2 200px;
+      -webkit-column-gap: 4em;
+      -moz-column-gap: 4em;
+      column-gap: 4em;
       box-decoration-break: clone;
+      overflow: hidden;
+      overflow-y: scroll;
 }
 
 /*!
