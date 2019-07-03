@@ -321,29 +321,28 @@ body {
   }
 }
 
-.container-feb {
-  padding-right: 45px;
-  padding-left: 45px;
-  overflow: hidden;
-  overflow-y: auto;
-  height: 100%;
-  background-color: #FFEECE;
-}
+
 .container-mar {
-  padding-right: 45px;
+  padding-right: 145px;
   padding-left: 45px;
+  margin-right: 120px;
+  margin-left: 120px;
+  padding-bottom: 200px;
   overflow: hidden;
   overflow-y: auto;
-  height: 100%;
-  background-color: #FFE380;
+  padding-bottom:6em;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 80%;
 }
 @media (max-width: 48em) {
   .container-mar{
-    padding-right: 0px;
-    padding-left: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
     width: 100%;
     height: 100%;
-    margin-bottom: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -415,6 +414,12 @@ This is for the March part
   width: 7.5%;
   height: 100%;
 }
+@media (max-width: 48em) {
+  .site-feb-mar{
+    opacity: 0;
+    width:0%;
+  }
+}
 
 
 .site-mar {
@@ -450,10 +455,15 @@ vertical-align: middle;
       -webkit-columns: 2 300px;
       -moz-columns: 2 300px;
       columns: 2 300px;
-      -webkit-column-gap: 0em;
-      -moz-column-gap: 0em;
-      column-gap: 0em;
+      -webkit-column-gap: -10px;
+      -moz-column-gap: -10px;
+      column-gap: -10px;
       box-decoration-break: clone;
+}
+@media (max-width: 48em) {
+  .col-mar{
+    transform: translateX(10%);
+  }
 }
 
 /*!
