@@ -369,6 +369,7 @@ body {
 }
 
 .site-text-febmar {
+  transform: rotate(-270deg);
   padding-left: 60%;
   color:#617D90;
 }
