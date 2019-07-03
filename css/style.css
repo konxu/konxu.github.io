@@ -433,6 +433,7 @@ This is for the March part
   .site-feb-mar{
     opacity: 0;
     width:0%;
+    padding:0;
   }
 }
 
