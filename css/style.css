@@ -337,8 +337,6 @@ body {
 }
 @media (max-width: 48em) {
   .container-mar{
-    margin-right: 10px;
-    margin-left: 10px;
     width: 100%;
     height: 100%;
     padding-right: 15px;
