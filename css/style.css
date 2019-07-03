@@ -503,6 +503,7 @@ This is the footer part
 }
 @media (max-width: 48em) {
   .col-1{
+    margin-left: 15px;
     max-width: 100%;
   }
 }
@@ -516,6 +517,7 @@ This is the footer part
 }
 @media (max-width: 48em) {
   .col-2{
+    margin-left: 15px;
     max-width: 100%;
   }
 }
@@ -526,6 +528,12 @@ This is the footer part
   margin-top: 15px;
   float: left;
   max-width: 60%;
+}
+@media (max-width: 48em) {
+  .col-3{
+    margin-left: 15px;
+    max-width: 100%;
+  }
 }
 .col-4{
   -webkit-columns: 4 200px;
