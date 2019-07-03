@@ -460,11 +460,6 @@ vertical-align: middle;
       column-gap: -10px;
       box-decoration-break: clone;
 }
-@media (max-width: 48em) {
-  .col-mar{
-    transform: translateX(10%);
-  }
-}
 
 /*!
 This is the footer part
