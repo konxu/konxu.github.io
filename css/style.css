@@ -360,9 +360,17 @@ body {
   width: 75%;
 }@media (max-width: 48em) {
   .container{
-    width: 75%;
+    width: 85%;
     font-size: 80%;
     padding-left: 12px;
+  }
+}
+
+.text {
+  line-height: 2rem;
+}@media (max-width: 48em) {
+  .text{
+  line-height: 1.6rem;
   }
 }
 
