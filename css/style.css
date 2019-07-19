@@ -244,6 +244,7 @@ body {
     top: 10%;
     height: 80%;
   }
+}
 .three-four{
   position:absolute;
   left: 10%;
@@ -299,6 +300,11 @@ body {
   width: 80%;
   height: 85%;
   background: #12365A;
+}@media (max-width: 48em) {
+  .four-three{
+    top: 20%;
+    height: 80%;
+  }
 }
 .four-five{
   position:absolute;
