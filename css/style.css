@@ -425,6 +425,13 @@ body {
     padding-right: 1rem;
   }
 }
+.center3{
+}
+@media (max-width: 48em) {
+  .center{
+    padding-top: 2.5rem;
+  }
+}
 
 
 .col-2{
