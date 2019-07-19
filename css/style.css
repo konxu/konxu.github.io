@@ -388,7 +388,7 @@ body {
 .center3{
 }
 @media (max-width: 48em) {
-  .center{
+  .center3{
     padding-top: 2.5rem;
   }
 }
