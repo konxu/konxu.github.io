@@ -100,12 +100,21 @@ body {
   width: 50%;
   height: 70%;
   background: #FFEFEA;
-  padding: 2rem;
 }@media (max-width: 48em) {
   .zero{
     width: 100%;
     height: 80%;
-    padding: 0rem;
+  }
+}
+.zero-h1{
+  color:#ED562F;
+  position:absolute;
+  bottom:10%;
+  padding-left: 2rem;
+}
+@media (max-width: 48em) {
+  .zero-h1{
+  padding-left: .8rem;
   }
 }
 .zero-one {
