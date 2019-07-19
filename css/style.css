@@ -343,6 +343,10 @@ body {
   width: 90%;
   height: 90%;
   background: #6493B6;
+}@media (max-width: 48em) {
+  .five-five{
+    width: 80%;
+  }
 }
 .five-info{
   position:absolute;
