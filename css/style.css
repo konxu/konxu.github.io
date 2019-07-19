@@ -239,7 +239,11 @@ body {
   width: 80%;
   height: 85%;
   background: #F0997E;
-}
+}@media (max-width: 48em) {
+  .three-three{
+    top: 10%;
+    height: 80%;
+  }
 .three-four{
   position:absolute;
   left: 10%;
@@ -405,6 +409,16 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 2.5rem;
+  }
+}
+.center2{
+}
+@media (max-width: 48em) {
+  .center2{
+    width: 90%;
+    font-size: 80%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
