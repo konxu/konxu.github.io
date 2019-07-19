@@ -100,11 +100,6 @@ body {
   width: 50%;
   height: 70%;
   background: #FFEFEA;
-}@media (max-width: 48em) {
-  .zero{
-    width: 100%;
-    height: 80%;
-  }
 }
 .zero-h1{
   position:absolute;
@@ -113,6 +108,7 @@ body {
 }@media (max-width: 48em) {
   .zero-h1{
   bottom:5%;
+  font-size: 80%;
   padding-left: .8rem;
   }
 }
@@ -137,12 +133,6 @@ body {
   width: 50%;
   height: 30%;
   background: #F1CB63;
-}@media (max-width: 48em) {
-  .one{
-    width: 100%;
-    top: 80%;
-    height: 20%;
-  }
 }
 .one-one {
   position:absolute;
@@ -165,12 +155,6 @@ body {
   width: 25%;
   height: 20%;
   background: #ED562F;
-}@media (max-width: 48em) {
-  .two{
-    width: 100%;
-    left: 0;
-    top:100%;
-  }
 }
 .two-one{
   position:absolute;
@@ -212,13 +196,6 @@ body {
   width: 25%;
   height: 40%;
   background: #F0997E;
-}@media (max-width: 48em) {
-  .three{
-    width: 100%;
-    left: 0;
-    top:120%;
-    height: 20%;
-  }
 }
 .three-one{
   position:absolute;
@@ -273,13 +250,6 @@ body {
   width: 25%;
   height: 40%;
   background: #12365A;
-}@media (max-width: 48em) {
-  .four{
-    width: 100%;
-    left: 0;
-    top:140%;
-    height: 20%;
-  }
 }
 .four-one{
   position:absolute;
@@ -326,13 +296,6 @@ body {
   height: 40%;
   background: #6493B6;
   overflow: hidden;
-}@media (max-width: 48em) {
-  .five{
-    width: 100%;
-    left: 0;
-    top:160%;
-    height: 20%;
-  }
 }
 .five-one{
   position:absolute;
@@ -363,13 +326,6 @@ body {
   width: 25%;
   height: 60%;
   background: #127067;
-}@media (max-width: 48em) {
-  .info{
-    width: 100%;
-    left: 0;
-    top:180%;
-    height: 20%;
-  }
 }
 .info-one{
   position:absolute;
