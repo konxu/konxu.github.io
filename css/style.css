@@ -103,7 +103,7 @@ body {
 }@media (max-width: 48em) {
   .zero{
     width: 100%;
-    height: 100%;
+    height: 90%;
   }
 }
 .zero-h1{
@@ -141,7 +141,7 @@ body {
 }@media (max-width: 48em) {
   .one{
     overflow: hidden;
-    top: 100%;
+    top: 90%;
     width: 50%;
     height: 100%;
   }
@@ -169,7 +169,7 @@ body {
   background: #ED562F;
 }@media (max-width: 48em) {
   .two{
-    top: 100%;
+    top: 90%;
   }
 }
 .two-one{
@@ -214,7 +214,7 @@ body {
   background: #F0997E;
 }@media (max-width: 48em) {
   .three{
-    top: 120%;
+    top: 110%;
   }
 }
 .three-one{
@@ -272,7 +272,7 @@ body {
   background: #12365A;
 }@media (max-width: 48em) {
   .four{
-    top: 160%;
+    top: 150%;
   }
 }
 .four-one{
@@ -322,7 +322,7 @@ body {
   overflow: hidden;
 }@media (max-width: 48em) {
   .five{
-    top: 100%;
+    top: 90%;
   }
 }
 .five-one{
@@ -356,7 +356,7 @@ body {
   background: #127067;
 }@media (max-width: 48em) {
   .info{
-    top: 140%;
+    top: 130%;
   }
 }
 .info-one{
