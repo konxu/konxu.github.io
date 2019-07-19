@@ -385,6 +385,7 @@ body {
 }
 
 .container {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   padding-left: 35px;
   overflow: hidden;
   overflow-y: auto;
