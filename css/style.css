@@ -360,7 +360,7 @@ body {
   width: 75%;
 }@media (max-width: 48em) {
   .container{
-    width: 85%;
+    width: 90%;
     font-size: 80%;
     padding-left: 12px;
   }
@@ -371,6 +371,16 @@ body {
 }@media (max-width: 48em) {
   .text{
   line-height: 1.6rem;
+  }
+}
+
+.text2 {
+  line-height: 2rem;
+  columns:2;
+}@media (max-width: 48em) {
+  .text2 {
+  line-height: 1.6rem;
+  columns:1;
   }
 }
 
