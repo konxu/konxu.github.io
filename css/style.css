@@ -105,8 +105,8 @@ body {
   .zero{
     width: 98%;
     height: 80%;
+    padding: 0rem;
     padding-left: .8rem;
-    padding-right: 0;
   }
 }
 .zero-one {
