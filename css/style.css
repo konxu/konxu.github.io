@@ -105,7 +105,8 @@ body {
 }@media (max-width: 48em) {
   .zero{
     width: 100%;
-    padding: 12px;
+    padding-left: 12px;
+    padding-right: 0;
     height: 80%;
   }
 }
