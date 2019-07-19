@@ -107,13 +107,12 @@ body {
   }
 }
 .zero-h1{
-  color:#ED562F;
   position:absolute;
   bottom:10%;
   padding-left: 2rem;
-}
-@media (max-width: 48em) {
+}@media (max-width: 48em) {
   .zero-h1{
+  bottom:5%;
   padding-left: .8rem;
   }
 }
@@ -391,8 +390,8 @@ body {
   width: 75%;
 }@media (max-width: 48em) {
   .container{
-    width: 80%;
-    padding-left: 25px;
+    width: 75%;
+    padding-left: 12px;
   }
 }
 
