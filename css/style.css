@@ -190,8 +190,12 @@ body {
   position:absolute;
   left: 10%;
   width: 80%;
-  height: 50%;
+  height: 5%;
   background: #ED562F;
+}@media (max-width: 48em) {
+  .two-three{
+    height: 10%;
+  }
 }
 .two-five{
   position:absolute;
