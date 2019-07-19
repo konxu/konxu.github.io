@@ -100,14 +100,13 @@ body {
   width: 50%;
   height: 70%;
   background: #FFEFEA;
-  margin:0;
   padding: 2rem;
 }@media (max-width: 48em) {
   .zero{
-    width: 100%;
-    padding-left: 12px;
-    padding-right: 0;
+    width: 98%;
     height: 80%;
+    padding-left: .8rem;
+    padding-right: 0;
   }
 }
 .zero-one {
