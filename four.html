@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>DaysBeforeGettingHired</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800|Raleway:500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>::-webkit-scrollbar {display:none}</style>
+  </head>
+
+  <script type="text/javascript">
+  var a_idx = 0;
+  jQuery(document).ready(function($) {
+
+      $("body").click(function(e) {
+          var a = new Array("img/2.png", "img/1.png", "水能载舟，亦能煮粥！", "明月几时有，抬头自己瞅。", "天哪！我的衣服又瘦了。", "听君一席话，回家烤白薯。", "流氓不可怕，就怕流氓有文化。", "知识就像内裤，看不见但很重要。", "为了祖国下一代，再丑也得谈恋爱。", "穷玩车，富玩表，牛B加班敲电脑。", "英雄不问出路，流氓不看岁数。", "我们的目标：向钱看，向厚赚。", "帅有个屁用！到头来还不是被卒吃掉！");
+          var $i = $("<span/>").img{
+            "src": text(a[a_idx]);
+          };
+          a_idx = (a_idx + 1) % a.length;
+          var x = e.pageX,
+          y = e.pageY;
+          $i.css({
+              "z-index": 5,
+              "top": y - 20,
+              "left": x,
+              "position": "absolute",
+
+  			"user-select":"none"
+          });
+          $("body").append($i);
+      });
+  });
+  </script>
+
+  <body>
+  <section>
+  <header class="header">
+    <h1><a href="index.html" class="logo" data-hover="DaysBeforeGettingHired">
+      <span><h1 style="color:black;font-size: 24px;">DBGH</h1></span></a></h1>
+  </header>
+  </section>
+
+  <a href="index.html"><div class="zero-two"></div></a>
+  <a href="one.html"><div class="one-two"></div></a>
+  <a href="two.html"><div class="two-three"></div></a>
+  <a href="three.html"><div class="three-three"></div></a>
+  <div class="four-three">
+    <div class="container">
+      <h1 style="color:#f1cb63;">Playground:</h1>
+    </div>
+  </div>
+  <a href="five.html"><div class="five-one"></div></a>
+  <a href="info.html"><div class="info-one"></div></a>
+
+</body>
+
+</html>
