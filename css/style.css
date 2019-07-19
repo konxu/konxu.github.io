@@ -340,18 +340,14 @@ body {
 .five-five{
   position:absolute;
   left: 20%;
-  width: 90%;
+  width: 80%;
   height: 90%;
   background: #6493B6;
-}@media (max-width: 48em) {
-  .five-five{
-    width: 80%;
-  }
 }
 .five-info{
   position:absolute;
   left: 20%;
-  width: 90%;
+  width: 80%;
   height: 10%;
   background: #6493B6;
 }
@@ -405,6 +401,7 @@ body {
 }@media (max-width: 48em) {
   .container{
     width: 75%;
+    font-size: 80%;
     padding-left: 12px;
   }
 }
@@ -414,7 +411,6 @@ body {
 @media (max-width: 48em) {
   .center{
     width: 90%;
-    font-size: 80%;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 2.5rem;
@@ -425,7 +421,6 @@ body {
 @media (max-width: 48em) {
   .center2{
     width: 90%;
-    font-size: 80%;
     padding-left: 1rem;
     padding-right: 1rem;
   }
