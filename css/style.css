@@ -444,7 +444,6 @@ body {
   }
 }
 
-
 .col-2{
   -webkit-columns: 4 200px;
   -moz-columns: 4 200px;
@@ -452,4 +451,13 @@ body {
   -webkit-column-gap: 0;
   -moz-column-gap: 0;
   column-gap: 2em;
+}
+
+img.intext{
+  width:90%;
+  border: 20px solid #127067;
+}@media (max-width: 48em) {
+  img.intext{
+    width:80%;
+  }
 }
